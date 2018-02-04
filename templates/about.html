@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CustomZ - HomePage</title>
+		
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+	<link name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+ </head>
+ <body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Custom<b>Z</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Categories</a>
+      <a href='{{url_for("info")}}'  class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://wallpaperclicker.com/storage/wallpaper/rainbow-colors-background-wallpaper-43801664.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">CustomZ</span><span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+ <div class="explain">
+ <br>
+  <h3> This website is all about DIY (do it yourself), every time you come up with a new tip or idea you can post it on this website.<br>x You could also use it to look for a new creative ideas and helpful tips !</h3>
+</div>
+
+  <!-- category Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Categories</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href='{{url_for("school")}}'>School Supplies</a></div>
+        <img src="https://www.simplemost.com/wp-content/uploads/2016/09/school-supplies-e1473283108634.jpeg" alt="House" style="width:100%">
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Home Decor</div>
+        <img src="http://www.greaterheightsnow.com/wp-content/uploads/2016/05/Colepic2163a.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Clothing</div>
+        <img src="https://static1.squarespace.com/static/56bc70578259b5fd72b1eea8/56bcf31dc6fc085f3b53b9cd/5a14881424a6943bc55ef5fb/1511457145910/capsule+wardrobe+pic.jpg?format=1500w" alt="House" style="width:100%">
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Accessories</div>
+        <img src="https://www.dsstyles.com/news/wp-content/uploads/2013/03/il_fullxfull.381582559_kcom.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+ </body>
+ </html>

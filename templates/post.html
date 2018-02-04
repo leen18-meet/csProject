@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CustomZ - Post</title>
+
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+	<link name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ </head>
+ <body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Custom<b>Z</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href='{{url_for("about")}}' class="w3-bar-item w3-button">Categories</a>
+      <a href='{{url_for("info")}}'  class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://www.thegoodbook.co.uk/downloads/post-it-notes2.jpg" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">Post It</span><span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<div class="post">
+<form action="{{url_for('post')}}" method="post">
+  Name:<br>
+  <input type="text" name="name">
+  <br>
+  Age:<br>
+  <input type="text" name="age">
+  <br>
+  Tips:<br>
+  <input type="text" name="description">
+  <br><br>
+  <input type="submit" value="Post">
+</form> 
+</div>
+
+ </body>
+ </html>

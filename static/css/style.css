@@ -1,0 +1,30 @@
+.explain h3{
+	 text-align: center;
+	 font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Info h3{
+	 text-align: center;
+	 font-family: 'Roboto Condensed', sans-serif;
+}
+.signup{
+	text-align: center;
+	margin-top: 50%;
+}
+.post{
+	text-align: center;
+}
+.poster{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #ff3333;
+	border-style: double;
+	border-radius: 25%;
+	width:600px;
+	margin:auto; 
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}

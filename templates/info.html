@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <title>CustomZ - HomePage</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+  <link name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+ </head>
+ <body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Custom<b>Z</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href='{{url_for("about")}}'  class="w3-bar-item w3-button">Categories</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="http://www.chrismaxwell.me/wp-content/uploads/2016/05/bigstock-Hand-drawn-light-bulb-over-bri-89993165.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">About Us</span><span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+ <div class="explain">
+</div>
+
+<!-- About Section 1 -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">WHAT IS IT ALL ABOUT ?</h3>
+  <p class="w3-center w3-large">This website was created for a need that i had. i am a creative person, and i like to try new things. I used to search in YouTube for DIY videos but after a while,it got really confusing. i found out that it is a lack of order in the ideos and there are no spicific tips that they give, so i desided to make this website, for any creative person or anyone who want to know more about uses of different tools!
+<br>
+  The only functional categoty for now is the "School Suplies", but all categories are going to be accessible soon, and creat more categories to discover.
+<br>
+  The MVP of this website can be given only tips(text), but it will be able to receive photos and videos soon.
+  </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Sharing</p>
+      <p>Helping others by giving them knowledge and tips how to "recycle" their old products and stuff that they dont need and making something new out of them.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>The love of creating new stuff and trying new things, in other words: get out of your comfort zone and explore your abilities.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>By trying to create and use something new you expand your knowlage and creativity. you will become more able to look at objects in a different prespective.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Knowledge</p>
+      <p>While exploring the videos and photos that are added to this website you can learn about new materials and tools, how to use them,when and where.</p>
+    </div>
+  </div>
+</div>
+
+ <!-- About Section 2 -->
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src=https://mail.google.com/mail/u/0/?ui=2&ik=6414aeeb99&view=fimg&th=16160719bfe54503&attid=0.1.1&disp=emb&attbid=ANGjdJ9Ws9xPRNY4F3UmAcZ_ZMYemvb1BFsErZF3Bvy8x3WOxevc94iWVeiJ-IuBx9mIkqbMYz0JbYLZWoYaIs8Uau2ZUSn64E3s0E-QD7EQEfpx-uJe7OGee89EF-4&sz=s0-l75-ft&ats=1517741535610&rm=16160719bfe54503&zw&atsh=1 alt="pic1" style="width:100%">
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://mail.google.com/mail/u/0/?ui=2&ik=6414aeeb99&view=att&th=161604bbe21db819&attid=0.2&disp=safe&zw" alt="pic2" style="width:100%">
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://mail.google.com/mail/u/0/?ui=2&ik=6414aeeb99&view=att&th=161604bbe21db819&attid=0.3&disp=safe&zw" alt="Mike" style="width:100%">
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://mail.google.com/mail/u/0/?ui=2&ik=6414aeeb99&view=att&th=161604bbe21db819&attid=0.4&disp=safe&zw" alt="Dan" style="width:100%">
+    </div>
+  </div>

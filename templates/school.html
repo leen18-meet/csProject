@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CustomZ - School Supplies</title>
+
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+	<link name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+ </head>
+ <body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Custom<b>Z</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href='{{url_for("about")}}' class="w3-bar-item w3-button">Categories</a>
+      <a href='{{url_for("info")}}'  class="w3-bar-item w3-button">About</a>
+      <a href='{{url_for("post")}}' class="w3-bar-item w3-button">Post</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://www.simplemost.com/wp-content/uploads/2016/09/school-supplies-e1473283108634.jpeg" alt="House" style="width:100%">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">School Supplies</span><span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<br><br>
+ <div class="Info">
+  <h3>Creative ideas to make your school supplies prittier or organize your school life, books, papers, schedule and more!</h3>
+  <br>
+<center>______________________________________________________________________________________________</center></div>
+
+
+{% for post in all_posts %}
+<div class='poster'>
+<b><b>Name:</b></b>{{ post.name }}<br>
+<b><b>Age:</b></b>{{ post.age }}<br>
+<b><b>Tips:</b></b>{{ post.description}}<br>
+</div>
+{% endfor %}
+
+ </body>
+ </html>
